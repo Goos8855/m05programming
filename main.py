@@ -1,4 +1,6 @@
 import unittest
+from fractions import Fraction
+
 
 from my_sum import sum
 
