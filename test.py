@@ -1,3 +1,7 @@
+#When executing these tests, the terminal outputs that there is a failure in the code somewhere among the assertion statements.
+#Looking through the two statements, the fractions don't add up to 1, meaning that that was our error.
+#If the statement in the assertEqual was true, then we'd have 0 failures, but with the numbers we have, thats the one failure we have.
+#Used "python -m unittest test" to run
 import unittest
 from fractions import Fraction
 
@@ -24,3 +28,4 @@ class TestSum(unittest.TestCase):
 
 if __name__ == "__main_":
     unittest.main()
+
